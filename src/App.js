@@ -11,10 +11,14 @@ import { useState } from "react";
 
 const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     return (
         <>
-            <NavBar setIsMenuOpen={setIsMenuOpen} />
+            <NavBar
+                setIsMenuOpen={setIsMenuOpen}
+                setIsDarkMode={setIsDarkMode}
+            />
             {isMenuOpen && <Menu />}
             <Routes>
                 <Route path="/" element={<Overview />} />
