@@ -4,6 +4,7 @@
     top: 0;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    z-index: 1000;
 
     .wrapper {
         margin: 1.5rem 3rem;
@@ -11,5 +12,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+        }
     }
 }
