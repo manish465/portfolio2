@@ -27,7 +27,7 @@
         right: 0;
         overflow: hidden;
         opacity: 1;
-        background-color: #fff;
+        background-color: #000;
         box-shadow: 0px 2px 25px #d9d9d9;
         border-radius: 50px;
         transition: 0.2s ease background-color, 0.2s ease opacity;
@@ -42,24 +42,23 @@
             border-radius: 50%;
             transition: 0.5s ease transform, 0.2s ease background-color;
             transform-origin: center center;
-            transform: translate(1px, 0px);
+            transform: translate(4px, 0px);
+            background-color: #fff;
         }
 
         &::before {
-            background-color: #000;
             opacity: 0;
             z-index: 2;
         }
 
         &::after {
             opacity: 1;
-            background-color: #000;
             z-index: 1;
         }
     }
 
     input[type="checkbox"]:checked + span {
-        background-color: #000;
+        background-color: #fff;
     }
 
     input[type="checkbox"]:active + span {
@@ -67,13 +66,14 @@
     }
 
     input[type="checkbox"]:checked + span::before {
+        background-color: #fff;
         opacity: 1;
         transform: translate(23px, -6px);
     }
 
     input[type="checkbox"]:checked + span::after {
         opacity: 1;
-        background-color: #fff;
+        background-color: #000;
         transform: translate(30px, 0px);
     }
 }
