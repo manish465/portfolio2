@@ -1,11 +1,11 @@
 import MenuIcon from "../assets/MenuIcon";
 
-const NavBar = () => {
+const NavBar = ({ setIsMenuOpen }) => {
     return (
         <header id="nav-bar">
             <div className="wrapper">
                 <h1>Portfolio</h1>
-                <MenuIcon />
+                <MenuIcon setIsMenuOpen={setIsMenuOpen} />
             </div>
         </header>
     );
