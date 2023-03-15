@@ -1,0 +1,43 @@
+nav#menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+
+    & > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    .extra-layer {
+        position: fixed;
+    }
+
+    .layer-1 {
+        background-color: #272727;
+    }
+
+    .layer-2 {
+        background-color: #525252;
+    }
+
+    .layer-3 {
+        background-color: #7e7e7e;
+    }
+
+    .layer-4 {
+        background-color: #cccccc;
+    }
+
+    .menu-content {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
