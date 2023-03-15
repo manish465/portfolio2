@@ -160,5 +160,13 @@ section#menu-content {
                 transform: translateY(0);
             }
         }
+
+        &:active {
+            transform: scale(0.8);
+            i {
+                transform: translateX(50px);
+                opacity: 1;
+            }
+        }
     }
 }
