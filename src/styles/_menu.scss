@@ -1,9 +1,38 @@
 nav#menu {
     position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     z-index: 20;
+    height: 100%;
     width: 100%;
-    min-height: 100vh;
-    background-color: rgb(151, 151, 151);
+
+    .extra-layer {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .layer-1 {
+        background-color: rgb(255, 140, 0);
+    }
+
+    .layer-2 {
+        background-color: rgb(209, 115, 0);
+    }
+
+    .layer-3 {
+        background-color: rgb(143, 79, 0);
+    }
+
+    .layer-4 {
+        background-color: rgb(88, 49, 0);
+    }
+
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+    }
 }

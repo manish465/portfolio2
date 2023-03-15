@@ -1,16 +1,65 @@
 import { motion } from "framer-motion";
 
+const menuStack = [
+    {
+        classList: "extra-layer layer-1",
+        animateDelay: 0,
+        exitDelay: 0.25,
+        isContent: false,
+    },
+    {
+        classList: "extra-layer layer-2",
+        animateDelay: 0.15,
+        exitDelay: 0.23,
+        isContent: false,
+    },
+    {
+        classList: "extra-layer layer-3",
+        animateDelay: 0.2,
+        exitDelay: 0.2,
+        isContent: false,
+    },
+    {
+        classList: "extra-layer layer-4",
+        animateDelay: 0.23,
+        exitDelay: 0.15,
+        isContent: false,
+    },
+    {
+        classList: "menu-content",
+        animateDelay: 0.25,
+        exitDelay: 0,
+        isContent: true,
+    },
+];
+
 const Menu = () => {
     return (
-        <motion.nav
-            id="menu"
-            initial={{ y: "-150%", skewY: 20 }}
-            animate={{ y: 0, skewY: 0 }}
-            exit={{ y: "-150%", skewY: 10 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-        >
-            <h1>This is menu section</h1>
-        </motion.nav>
+        <nav id="menu">
+            {menuStack.map((stackElement, key) => (
+                <motion.div
+                    key={key}
+                    className={stackElement.classList}
+                    initial={{ y: "-130%", skewY: 20 }}
+                    animate={{
+                        y: 0,
+                        skewY: 0,
+                        transition: {
+                            duration: 0.8,
+                            delay: stackElement.animateDelay,
+                        },
+                    }}
+                    exit={{
+                        y: "-130%",
+                        skewY: 10,
+                        transition: {
+                            duration: 0.8,
+                            delay: stackElement.exitDelay,
+                        },
+                    }}
+                ></motion.div>
+            ))}
+        </nav>
     );
 };
 
