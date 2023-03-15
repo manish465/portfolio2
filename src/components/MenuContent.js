@@ -1,5 +1,9 @@
 const MenuContent = () => {
-    return <div>MenuContent</div>;
+    return (
+        <section id="menu-content">
+            <div class="card"></div>
+        </section>
+    );
 };
 
 export default MenuContent;

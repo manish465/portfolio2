@@ -1,4 +1,4 @@
-import MenuIcon from "../assets/MenuIcon";
+import MenuIcon from "../assets/icons/MenuIcon";
 import ThemeToggle from "./ThemeToggle";
 
 const NavBar = ({ setIsMenuOpen, setIsDarkMode }) => {

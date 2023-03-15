@@ -1,4 +1,5 @@
 import "./styles/main.scss";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import { Route, Routes } from "react-router-dom";
 import Career from "./pages/Career";
@@ -11,7 +12,7 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
 const App = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     return (
