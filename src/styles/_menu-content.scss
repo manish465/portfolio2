@@ -1,6 +1,164 @@
-$img-url: url("../assets/pictures/overview.jpg");
+$img-url1: "../assets/gifs/1.gif";
+$img-url2: "../assets/gifs/2.gif";
+$img-url3: "../assets/gifs/3.gif";
+$img-url4: "../assets/gifs/4.webp";
 
 section#menu-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+
     .card {
+        background-color: bisque;
+        width: 500px;
+        height: 200px;
+        position: relative;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+
+        .background-pic {
+            position: absolute;
+            background-position: center;
+            background-size: 200%;
+            width: 60%;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+            transition: inherit;
+            transition-delay: 0.2s;
+            filter: grayscale(1);
+        }
+
+        .pic-1 {
+            background-image: url($img-url1);
+        }
+        .pic-2 {
+            background-image: url($img-url2);
+        }
+        .pic-3 {
+            background-image: url($img-url3);
+        }
+        .pic-4 {
+            background-image: url($img-url4);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            position: absolute;
+            z-index: 1;
+            bottom: 5%;
+            right: 15%;
+            transition: inherit;
+            transform-origin: bottom right;
+        }
+
+        i {
+            font-size: 1.2rem;
+            position: absolute;
+            z-index: 2;
+            bottom: 5%;
+            right: 5%;
+            opacity: 0;
+            transition: inherit;
+            transform-origin: bottom right;
+            color: #fff;
+            transition-delay: 0.2s;
+        }
+
+        .shape-circle {
+            position: absolute;
+            z-index: 1;
+            width: 50%;
+            height: 100%;
+            right: 0;
+            background-color: orangered;
+            clip-path: circle(15% at 77% 82%);
+            transition: inherit;
+        }
+
+        h5 {
+            font-size: 0.8rem;
+            font-weight: 400;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: -3%;
+            writing-mode: vertical-lr;
+            letter-spacing: 1px;
+            transition: inherit;
+            transition-delay: 0.1s;
+        }
+
+        .random-icons {
+            position: relative;
+            z-index: 1;
+            top: 10%;
+            left: 5%;
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: inherit;
+
+            span {
+                opacity: 0;
+                transition: inherit;
+                font-size: 1.2rem;
+                font-weight: 900;
+                color: #000;
+                transform: translateY(20px);
+            }
+
+            span:nth-of-type(1) {
+                transition-delay: 0.2s;
+            }
+            span:nth-of-type(2) {
+                transition-delay: 0.4s;
+            }
+            span:nth-of-type(3) {
+                transition-delay: 0.6s;
+            }
+            span:nth-of-type(4) {
+                transition-delay: 0.8s;
+            }
+            span:nth-of-type(5) {
+                transition-delay: 1s;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.2);
+
+            .background-pic {
+                filter: grayscale(0);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                background-size: 100%;
+            }
+
+            .shape-circle {
+                clip-path: circle(82.9% at 77% 82%);
+            }
+
+            h3 {
+                transform: scale(1.5);
+                color: #fff;
+            }
+
+            i {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+
+            h5 {
+                color: gray;
+                letter-spacing: 10px;
+            }
+
+            .random-icons > span {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     }
 }
