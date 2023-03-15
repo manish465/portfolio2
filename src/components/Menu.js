@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
+
 const Menu = () => {
     return (
-        <nav id="menu">
+        <motion.nav
+            id="menu"
+            initial={{ y: "-150%", skewY: 20 }}
+            animate={{ y: 0, skewY: 0 }}
+            exit={{ y: "-150%", skewY: 10 }}
+            transition={{ duration: 1 }}
+        >
             <h1>This is menu section</h1>
-        </nav>
+        </motion.nav>
     );
 };
 

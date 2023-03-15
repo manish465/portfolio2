@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import NavBar from "./components/NavBar";
 import Menu from "./components/Menu";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const App = () => {
                 setIsMenuOpen={setIsMenuOpen}
                 setIsDarkMode={setIsDarkMode}
             />
-            {isMenuOpen && <Menu />}
+            <AnimatePresence>{isMenuOpen && <Menu />}</AnimatePresence>
             <Routes>
                 <Route path="/" element={<Overview />} />
                 <Route path="/projects" element={<Projects />} />
