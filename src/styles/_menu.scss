@@ -8,31 +8,35 @@ nav#menu {
     height: 100%;
     width: 100%;
 
-    .extra-layer {
-        position: fixed;
+    & > div {
         height: 100%;
         width: 100%;
+    }
+
+    .extra-layer {
+        position: fixed;
     }
 
     .layer-1 {
-        background-color: rgb(255, 140, 0);
+        background-color: #272727;
     }
 
     .layer-2 {
-        background-color: rgb(209, 115, 0);
+        background-color: #525252;
     }
 
     .layer-3 {
-        background-color: rgb(143, 79, 0);
+        background-color: #7e7e7e;
     }
 
     .layer-4 {
-        background-color: rgb(88, 49, 0);
+        background-color: #cccccc;
     }
 
     .menu-content {
-        width: 100%;
-        height: 100%;
-        background-color: gray;
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

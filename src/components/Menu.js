@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MenuContent from "./MenuContent";
 
 const menuStack = [
     {
@@ -40,24 +41,26 @@ const Menu = () => {
                 <motion.div
                     key={key}
                     className={stackElement.classList}
-                    initial={{ y: "-130%", skewY: 20 }}
+                    initial={{ y: "-150%", skewY: 20 }}
                     animate={{
                         y: 0,
                         skewY: 0,
                         transition: {
-                            duration: 0.8,
+                            duration: 1,
                             delay: stackElement.animateDelay,
                         },
                     }}
                     exit={{
-                        y: "-130%",
+                        y: "-150%",
                         skewY: 10,
                         transition: {
-                            duration: 0.8,
+                            duration: 1,
                             delay: stackElement.exitDelay,
                         },
                     }}
-                ></motion.div>
+                >
+                    {stackElement.isContent && <MenuContent />}
+                </motion.div>
             ))}
         </nav>
     );
