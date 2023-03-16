@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MenuIcon from "../assets/icons/MenuIcon";
-import ThemeToggle from "./ThemeToggle";
 
 const menuLinkList = [
     {
@@ -25,12 +24,7 @@ const menuLinkList = [
     },
 ];
 
-const NavBar = ({
-    isScreenScrolled,
-    isMenuOpen,
-    setIsMenuOpen,
-    setIsDarkMode,
-}) => {
+const NavBar = ({ isScreenScrolled, setIsMenuOpen }) => {
     return (
         <header
             id="nav-bar"
@@ -62,11 +56,7 @@ const NavBar = ({
                     </motion.ul>
                 )}
                 <div>
-                    <ThemeToggle setIsDarkMode={setIsDarkMode} />
-                    <MenuIcon
-                        isMenuOpen={isMenuOpen}
-                        setIsMenuOpen={setIsMenuOpen}
-                    />
+                    <MenuIcon setIsMenuOpen={setIsMenuOpen} />
                 </div>
             </div>
         </header>

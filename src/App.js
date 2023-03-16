@@ -16,7 +16,6 @@ const App = () => {
     const location = useLocation();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(false);
     const [isScreenScrolled, setIsScreenScrolled] = useState(false);
 
     const { scrollY } = useScroll();
@@ -36,7 +35,6 @@ const App = () => {
                 isScreenScrolled={isScreenScrolled}
                 isMenuOpen={isMenuOpen}
                 setIsMenuOpen={setIsMenuOpen}
-                setIsDarkMode={setIsDarkMode}
             />
             <AnimatePresence>{isMenuOpen && <Menu />}</AnimatePresence>
             <Routes>

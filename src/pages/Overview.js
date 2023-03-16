@@ -1,10 +1,5 @@
 const Overview = () => {
-    return (
-        <section id="overview">
-            <div>First</div>
-            <div>First</div>
-        </section>
-    );
+    return <section id="overview"></section>;
 };
 
 export default Overview;
