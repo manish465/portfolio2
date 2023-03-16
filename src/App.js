@@ -28,6 +28,7 @@ const App = () => {
         <>
             <NavBar
                 isScreenScrolled={isScreenScrolled}
+                isMenuOpen={isMenuOpen}
                 setIsMenuOpen={setIsMenuOpen}
                 setIsDarkMode={setIsDarkMode}
             />

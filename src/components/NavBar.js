@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import MenuIcon from "../assets/icons/MenuIcon";
 import ThemeToggle from "./ThemeToggle";
 
-const NavBar = ({ isScreenScrolled, setIsMenuOpen, setIsDarkMode }) => {
+const NavBar = ({
+    isScreenScrolled,
+    isMenuOpen,
+    setIsMenuOpen,
+    setIsDarkMode,
+}) => {
     return (
         <header
             id="nav-bar"
@@ -30,7 +35,10 @@ const NavBar = ({ isScreenScrolled, setIsMenuOpen, setIsDarkMode }) => {
                 )}
                 <div>
                     <ThemeToggle setIsDarkMode={setIsDarkMode} />
-                    <MenuIcon setIsMenuOpen={setIsMenuOpen} />
+                    <MenuIcon
+                        isMenuOpen={isMenuOpen}
+                        setIsMenuOpen={setIsMenuOpen}
+                    />
                 </div>
             </div>
         </header>
