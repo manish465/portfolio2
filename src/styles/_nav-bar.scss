@@ -2,9 +2,8 @@
     position: fixed;
     width: 100%;
     top: 0;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
+    transition: background-color 0.2s ease-out;
 
     .wrapper {
         margin: 1.5rem 3rem;
@@ -13,11 +12,46 @@
         justify-content: space-between;
         align-items: center;
 
+        h1 {
+            color: black;
+            cursor: pointer;
+            transition: font-size 0.2s ease-out;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+
+            li {
+                cursor: pointer;
+                position: relative;
+            }
+        }
+
         div {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 2rem;
         }
+    }
+}
+
+.opaqueBackground {
+    background-color: rgb(153, 153, 153);
+
+    .wrapper > h1 {
+        font-size: 1rem;
+    }
+}
+
+.translucentBackground {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    .wrapper > h1 {
+        font-size: 3rem;
     }
 }

@@ -1,23 +1,33 @@
 import "./styles/main.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import { AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion";
+
 import Career from "./pages/Career";
 import Overview from "./pages/Overview";
 import PageNotFound from "./pages/PageNotFound";
 import Projects from "./pages/Projects";
 import NavBar from "./components/NavBar";
 import Menu from "./components/Menu";
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
 
 const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isScreenScrolled, setIsScreenScrolled] = useState(false);
+
+    const { scrollY } = useScroll();
+
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        if (latest > 0) setIsScreenScrolled(true);
+        else setIsScreenScrolled(false);
+    });
 
     return (
         <>
             <NavBar
+                isScreenScrolled={isScreenScrolled}
                 setIsMenuOpen={setIsMenuOpen}
                 setIsDarkMode={setIsDarkMode}
             />
