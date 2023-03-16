@@ -1,6 +1,6 @@
 const ThemeToggle = ({ setIsDarkMode }) => {
     return (
-        <div class="toggle-btn" id="toggle-btn">
+        <div className="toggle-btn" id="toggle-btn">
             <input
                 type="checkbox"
                 onClick={() => setIsDarkMode((prev) => !prev)}
