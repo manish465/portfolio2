@@ -1,8 +1,8 @@
 import "./styles/main.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion";
 
 import Career from "./pages/Career";
@@ -13,6 +13,8 @@ import NavBar from "./components/NavBar";
 import Menu from "./components/Menu";
 
 const App = () => {
+    const location = useLocation();
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [isScreenScrolled, setIsScreenScrolled] = useState(false);
@@ -23,6 +25,10 @@ const App = () => {
         if (latest > 0) setIsScreenScrolled(true);
         else setIsScreenScrolled(false);
     });
+
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [location]);
 
     return (
         <>

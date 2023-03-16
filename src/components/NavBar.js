@@ -1,6 +1,29 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import MenuIcon from "../assets/icons/MenuIcon";
 import ThemeToggle from "./ThemeToggle";
+
+const menuLinkList = [
+    {
+        title: "Overview",
+        path: "/",
+        isDownloadable: false,
+    },
+    {
+        title: "Projects",
+        path: "/projects",
+        isDownloadable: false,
+    },
+    {
+        title: "Career",
+        path: "/career",
+        isDownloadable: false,
+    },
+    {
+        title: "Resume",
+        isDownloadable: true,
+    },
+];
 
 const NavBar = ({
     isScreenScrolled,
@@ -27,10 +50,15 @@ const NavBar = ({
                         animate={{ y: 0 }}
                         transition={{ delay: 0.2 }}
                     >
-                        <li>Overview</li>
-                        <li>Projects</li>
-                        <li>Carrer</li>
-                        <li>Resume</li>
+                        {menuLinkList.map((menuLinkItem, key) => {
+                            return menuLinkItem.isDownloadable ? (
+                                <li key={key}>{menuLinkItem.title}</li>
+                            ) : (
+                                <Link key={key} to={menuLinkItem.path}>
+                                    <li>{menuLinkItem.title}</li>
+                                </Link>
+                            );
+                        })}
                     </motion.ul>
                 )}
                 <div>
