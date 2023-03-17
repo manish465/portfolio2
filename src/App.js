@@ -1,7 +1,7 @@
 import "./styles/main.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion";
 
@@ -32,8 +32,8 @@ const App = () => {
     return (
         <>
             <NavBar
-                isScreenScrolled={isScreenScrolled}
                 isMenuOpen={isMenuOpen}
+                isScreenScrolled={isScreenScrolled}
                 setIsMenuOpen={setIsMenuOpen}
             />
             <AnimatePresence>{isMenuOpen && <Menu />}</AnimatePresence>

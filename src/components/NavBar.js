@@ -24,7 +24,7 @@ const menuLinkList = [
     },
 ];
 
-const NavBar = ({ isScreenScrolled, setIsMenuOpen }) => {
+const NavBar = ({ isMenuOpen, isScreenScrolled, setIsMenuOpen }) => {
     return (
         <header
             id="nav-bar"
@@ -33,11 +33,13 @@ const NavBar = ({ isScreenScrolled, setIsMenuOpen }) => {
             }
         >
             <div className="wrapper">
-                {isScreenScrolled ? (
-                    <h1>Portfolio</h1>
-                ) : (
-                    <h1>System.out.println( "Hi" )</h1>
-                )}
+                <h1>
+                    <Link to="/">
+                        {isScreenScrolled
+                            ? "Portfolio"
+                            : 'System.out.println("Hello")'}
+                    </Link>
+                </h1>
                 {isScreenScrolled && (
                     <motion.ul
                         initial={{ y: "-5rem" }}
@@ -56,7 +58,10 @@ const NavBar = ({ isScreenScrolled, setIsMenuOpen }) => {
                     </motion.ul>
                 )}
                 <div>
-                    <MenuIcon setIsMenuOpen={setIsMenuOpen} />
+                    <MenuIcon
+                        isMenuOpen={isMenuOpen}
+                        setIsMenuOpen={setIsMenuOpen}
+                    />
                 </div>
             </div>
         </header>
