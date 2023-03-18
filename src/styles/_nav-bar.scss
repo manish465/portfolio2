@@ -4,6 +4,11 @@
     top: 0;
     z-index: 1000;
     transition: background-color 0.2s ease-out;
+    background-color: rgb(153, 153, 153);
+
+    .wrapper > h1 {
+        font-size: 1rem;
+    }
 
     .wrapper {
         margin: 1.5rem 3rem;
@@ -35,23 +40,5 @@
             align-items: center;
             gap: 2rem;
         }
-    }
-}
-
-.opaqueBackground {
-    background-color: rgb(153, 153, 153);
-
-    .wrapper > h1 {
-        font-size: 1rem;
-    }
-}
-
-.translucentBackground {
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    .wrapper > h1 {
-        font-size: 3rem;
     }
 }

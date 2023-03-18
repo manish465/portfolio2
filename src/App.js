@@ -1,14 +1,15 @@
 import "./styles/main.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 import Career from "./pages/Career";
 import Overview from "./pages/Overview";
 import PageNotFound from "./pages/PageNotFound";
 import Projects from "./pages/Projects";
+
 import NavBar from "./components/NavBar";
 import Menu from "./components/Menu";
 
@@ -16,14 +17,6 @@ const App = () => {
     const location = useLocation();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isScreenScrolled, setIsScreenScrolled] = useState(false);
-
-    const { scrollY } = useScroll();
-
-    useMotionValueEvent(scrollY, "change", (latest) => {
-        if (latest > 0) setIsScreenScrolled(true);
-        else setIsScreenScrolled(false);
-    });
 
     useEffect(() => {
         setIsMenuOpen(false);
@@ -31,11 +24,7 @@ const App = () => {
 
     return (
         <>
-            <NavBar
-                isMenuOpen={isMenuOpen}
-                isScreenScrolled={isScreenScrolled}
-                setIsMenuOpen={setIsMenuOpen}
-            />
+            <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             <AnimatePresence>{isMenuOpen && <Menu />}</AnimatePresence>
             <Routes>
                 <Route path="/" element={<Overview />} />

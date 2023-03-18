@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MenuIcon from "../assets/icons/MenuIcon";
 
@@ -24,39 +23,24 @@ const menuLinkList = [
     },
 ];
 
-const NavBar = ({ isMenuOpen, isScreenScrolled, setIsMenuOpen }) => {
+const NavBar = ({ isMenuOpen, setIsMenuOpen }) => {
     return (
-        <header
-            id="nav-bar"
-            className={
-                isScreenScrolled ? "translucentBackground" : "opaqueBackground"
-            }
-        >
+        <header id="nav-bar">
             <div className="wrapper">
                 <h1>
-                    <Link to="/">
-                        {isScreenScrolled
-                            ? "Portfolio"
-                            : 'System.out.println("Hello")'}
-                    </Link>
+                    <Link to="/">System.out.println("Hello")</Link>
                 </h1>
-                {isScreenScrolled && (
-                    <motion.ul
-                        initial={{ y: "-5rem" }}
-                        animate={{ y: 0 }}
-                        transition={{ delay: 0.2 }}
-                    >
-                        {menuLinkList.map((menuLinkItem, key) => {
-                            return menuLinkItem.isDownloadable ? (
-                                <li key={key}>{menuLinkItem.title}</li>
-                            ) : (
-                                <Link key={key} to={menuLinkItem.path}>
-                                    <li>{menuLinkItem.title}</li>
-                                </Link>
-                            );
-                        })}
-                    </motion.ul>
-                )}
+                <ul>
+                    {menuLinkList.map((menuLinkItem, key) => {
+                        return menuLinkItem.isDownloadable ? (
+                            <li key={key}>{menuLinkItem.title}</li>
+                        ) : (
+                            <Link key={key} to={menuLinkItem.path}>
+                                <li>{menuLinkItem.title}</li>
+                            </Link>
+                        );
+                    })}
+                </ul>
                 <div>
                     <MenuIcon
                         isMenuOpen={isMenuOpen}
