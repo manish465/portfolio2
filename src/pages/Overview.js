@@ -1,12 +1,20 @@
 const Overview = () => {
     return (
-        <section id="overview">
-            <section className="welcome snap">
+        <section id="overview" data-scroll-section>
+            <section className="welcome">
                 <div className="welcome-section">
                     <h1>Welcome</h1>
                 </div>
-                <div className="secondary-container glass"></div>
-                <div className="overview-banner glass">
+                <div
+                    className="secondary-container glass"
+                    data-scroll
+                    data-scroll-speed="2"
+                ></div>
+                <div
+                    className="overview-banner glass"
+                    data-scroll
+                    data-scroll-speed="-4"
+                >
                     <h2>Hi, i'am Manish</h2>
                     <p>
                         A tech enthusiast, currently working as Quality
@@ -20,7 +28,7 @@ const Overview = () => {
                 </div>
             </section>
             <section className="intermidiate"></section>
-            <section className="welcome-2 snap">snap</section>
+            <section className="welcome-2">snap</section>
         </section>
     );
 };

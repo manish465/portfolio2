@@ -1,12 +1,4 @@
 section#overview {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-
-    section.snap {
-        scroll-snap-align: start;
-    }
-
     section.welcome {
         position: relative;
         width: 100%;
@@ -16,10 +8,12 @@ section#overview {
             width: inherit;
             position: absolute;
             bottom: 0;
+            z-index: 0;
 
             h1 {
                 text-align: center;
                 font-size: 18.5rem;
+                mix-blend-mode: difference;
             }
         }
 
