@@ -46,7 +46,7 @@ const Menu = () => {
                         y: 0,
                         skewY: 0,
                         transition: {
-                            duration: 1,
+                            duration: 0.5,
                             delay: stackElement.animateDelay,
                         },
                     }}
@@ -54,7 +54,7 @@ const Menu = () => {
                         y: "-150%",
                         skewY: 10,
                         transition: {
-                            duration: 1,
+                            duration: 0.5,
                             delay: stackElement.exitDelay,
                         },
                     }}
