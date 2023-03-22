@@ -1,44 +1,24 @@
-#nav-bar {
+header#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
-    width: 100%;
+    padding: 1rem 2rem;
+    margin: 0 2rem;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    transition: background-color 0.2s ease-out;
-    background-color: rgb(153, 153, 153);
+    backdrop-filter: blur(20px);
+    border-bottom: 2px solid black;
 
-    .wrapper > h1 {
-        font-size: 1rem;
-    }
-
-    .wrapper {
-        margin: 1.5rem 3rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        h1 {
-            color: black;
-            cursor: pointer;
-            transition: font-size 0.2s ease-out;
-        }
-
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-
-            li {
-                cursor: pointer;
-                position: relative;
-            }
-        }
-
-        div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 2rem;
-        }
+    h1 {
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 600;
+        position: relative;
+        border: 2px solid black;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
     }
 }
