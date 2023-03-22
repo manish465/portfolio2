@@ -4,16 +4,14 @@ import MenuIcon from "../assets/icons/MenuIcon";
 const NavBar = ({ isMenuOpen, setIsMenuOpen }) => {
     return (
         <header id="nav-bar">
-            <div className="wrapper">
-                <h1>
-                    <Link to="/">System.out.println("Hello")</Link>
-                </h1>
-                <div>
-                    <MenuIcon
-                        isMenuOpen={isMenuOpen}
-                        setIsMenuOpen={setIsMenuOpen}
-                    />
-                </div>
+            <Link to="/">
+                <h1>Hello</h1>
+            </Link>
+            <div className="menu-icon-wrapper">
+                <MenuIcon
+                    isMenuOpen={isMenuOpen}
+                    setIsMenuOpen={setIsMenuOpen}
+                />
             </div>
         </header>
     );
