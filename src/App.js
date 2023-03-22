@@ -27,6 +27,7 @@ const App = () => {
 
     return (
         <>
+            <div className="fixed-background"></div>
             <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             <AnimatePresence>{isMenuOpen && <Menu />}</AnimatePresence>
             <LocomotiveScrollProvider

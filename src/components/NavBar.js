@@ -3,7 +3,7 @@ import MenuIcon from "../assets/icons/MenuIcon";
 
 const NavBar = ({ isMenuOpen, setIsMenuOpen }) => {
     return (
-        <header id="nav-bar">
+        <header id="nav-bar" className="glass">
             <Link to="/">
                 <h1>Hello</h1>
             </Link>
