@@ -12,7 +12,7 @@ const HorizontalScrollSection = () => {
             container,
             { translateX: 0 },
             {
-                translateX: -100 * (container.length - 1) + "vw",
+                translateX: -100 * (container.length - 1) + "%",
                 ease: "none",
                 duration: 1,
                 scrollTrigger: {
