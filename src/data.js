@@ -63,3 +63,49 @@ export const skillData = {
         },
     ],
 };
+
+export const toolsData = {
+    heading: "Tools",
+    techList: [
+        {
+            name: "VS Code",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+        },
+        {
+            name: "Intellij",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png?20200803071016",
+        },
+        {
+            name: "Eclipse",
+            image: "https://logowik.com/content/uploads/images/eclipse5466.jpg",
+        },
+        {
+            name: "Figma",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/640px-Figma-logo.svg.png",
+        },
+        {
+            name: "MySQL Workbench",
+            image: "https://i0.wp.com/deepinthecode.com/wp-content/uploads/2017/10/mysql_workbench.jpg?w=490&ssl=1",
+        },
+        {
+            name: "Mongodb Compass",
+            image: "https://i0.wp.com/www.kenwalger.com/blog/wp-content/uploads/2017/04/mongodb-compass-e1491607950242.png?fit=125%2C125&ssl=1",
+        },
+        {
+            name: "Adobe XD",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/512px-Adobe_XD_CC_icon.svg.png?20210729021535",
+        },
+        {
+            name: "Chrome",
+            image: "https://logowik.com/content/uploads/images/google-chrome-2022-new5983.jpg",
+        },
+        {
+            name: "Git",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png?20160811101906",
+        },
+        {
+            name: "Postman",
+            image: "https://logowik.com/content/uploads/images/postman-api-platform6643.logowik.com.webp",
+        },
+    ],
+};
