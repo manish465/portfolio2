@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import HorizontalScrollSection from "../components/HorizontalScrollSection";
 
 const Overview = () => {
     return (
-        <section id="overview" data-scroll-section>
+        <section id="overview">
             <section className="banner">
                 <article className="glass">
                     <h2>Hi, i'am Manish</h2>
@@ -21,6 +22,7 @@ const Overview = () => {
                     </div>
                 </article>
             </section>
+            <HorizontalScrollSection />
         </section>
     );
 };
