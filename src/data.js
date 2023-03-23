@@ -1,0 +1,18 @@
+export const techList = [
+    { name: "Java" },
+    { name: "Spring Boot" },
+    { name: "My SQL" },
+    { name: "React JS" },
+    { name: "Next JS" },
+    { name: "Selenium" },
+    { name: "Maven" },
+    { name: "TestNG" },
+    { name: "MongoDB" },
+    { name: "Automation Testing" },
+    { name: "Testcafe" },
+    { name: "Playwright" },
+    { name: "JavaScript" },
+    { name: "Node JS" },
+    { name: "HTML" },
+    { name: "CSS" },
+];

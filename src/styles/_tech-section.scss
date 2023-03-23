@@ -1,0 +1,48 @@
+.tech-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    h1.tech-heading {
+        font-size: 4rem;
+        font-weight: 900;
+    }
+
+    .tech-section-list {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        text-align: center;
+
+        span.tech {
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.4s ease-out;
+
+            &::before {
+                content: "";
+                inset: 0;
+                position: absolute;
+                background-color: gray;
+                z-index: -1;
+                clip-path: circle(0% at 50% 50%);
+                transition: clip-path 0.4s ease-out;
+            }
+
+            &:hover {
+                transform: scale(0.8);
+
+                &::before {
+                    clip-path: circle(80% at 50% 50%);
+                }
+            }
+        }
+    }
+}
