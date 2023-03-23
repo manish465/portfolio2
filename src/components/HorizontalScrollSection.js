@@ -1,9 +1,8 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import TechSection from "./TechSection";
 
-const HorizontalScrollSection = () => {
+const HorizontalScrollSection = ({ horizontalComponentList }) => {
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
@@ -31,10 +30,11 @@ const HorizontalScrollSection = () => {
 
     return (
         <section className="horizontal-container">
-            <section className="horizontal-section">
-                <TechSection />
-            </section>
-            <section className="horizontal-section">2</section>
+            {horizontalComponentList.map((component, key) => (
+                <section className="horizontal-section" key={key}>
+                    {component}
+                </section>
+            ))}
         </section>
     );
 };

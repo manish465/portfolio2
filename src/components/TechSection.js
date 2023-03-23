@@ -1,13 +1,34 @@
-import { techList } from "../data";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
-const TechSection = () => {
+import useMousePosHook from "../hooks/useMousePosHook";
+
+const TechSection = ({ heading, data }) => {
+    const [image, setImage] = useState("");
+
+    const mousePos = useMousePosHook();
+
     return (
         <div className="tech-section">
-            <h1 className="tech-heading">Skills</h1>
+            <h1 className="tech-heading">{heading}</h1>
+            <motion.div
+                className={image === "" ? "techImage" : "techImage reveal"}
+                animate={{
+                    x: mousePos.x - 650,
+                    y: mousePos.y - 450,
+                }}
+            >
+                {image !== "" && <img src={image} alt="background" />}
+            </motion.div>
             <div className="tech-section-list">
-                {techList.map((techItem, key) => (
-                    <span className="tech" key={key}>
-                        {techItem.name}
+                {data.map((item, key) => (
+                    <span
+                        className="tech"
+                        key={key}
+                        onMouseEnter={() => setImage(item.image)}
+                        onMouseLeave={() => setImage("")}
+                    >
+                        {item.name}
                     </span>
                 ))}
             </div>
