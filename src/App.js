@@ -19,8 +19,8 @@ const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
-        // setIsMenuOpen(true);
-        // setTimeout(() => setIsMenuOpen(false), 1000);
+        setIsMenuOpen(true);
+        setTimeout(() => setIsMenuOpen(false), 1000);
     }, [location.pathname]);
 
     return (

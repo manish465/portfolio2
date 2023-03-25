@@ -1,6 +1,5 @@
 import Banner from "../components/Banner";
 import HorizontalScrollSection from "../components/HorizontalScrollSection";
-import TableSection from "../components/TableSection";
 import TechSection from "../components/TechSection";
 
 import { skillData, toolsData } from "../data";
@@ -17,7 +16,7 @@ const Overview = () => {
             <HorizontalScrollSection
                 horizontalComponentList={horizontalComponentList}
             />
-            <TableSection />
+            <section>1</section>
         </section>
     );
 };
