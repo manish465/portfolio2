@@ -15,7 +15,7 @@ export const skillData = {
         },
         {
             name: "React JS",
-            image: "https://cdn.icon-icons.com/icons2/3781/PNG/512/react_icon_231932.png",
+            image: "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png",
         },
         {
             name: "Next JS",
@@ -27,7 +27,7 @@ export const skillData = {
         },
         {
             name: "Maven",
-            image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/folder_type_maven_opened_icon_129896.png",
+            image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png",
         },
         {
             name: "TestNG",
