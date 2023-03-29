@@ -3,19 +3,19 @@ export const skillData = {
     techList: [
         {
             name: "Java",
-            image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/java_logo_icon_168609.png",
+            image: "https://img.icons8.com/fluency/256/java-coffee-cup-logo.png",
         },
         {
             name: "Spring Boot",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/640px-Spring_Framework_Logo_2018.svg.png",
+            image: "https://img.icons8.com/officel/256/spring-logo.png",
         },
         {
             name: "My SQL",
-            image: "https://www.logo.wine/a/logo/MySQL/MySQL-Logo.wine.svg",
+            image: "https://img.icons8.com/fluency/256/my-sql.png",
         },
         {
             name: "React JS",
-            image: "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png",
+            image: "https://img.icons8.com/clouds/256/react.png",
         },
         {
             name: "Next JS",
@@ -23,7 +23,7 @@ export const skillData = {
         },
         {
             name: "Selenium",
-            image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png",
+            image: "https://img.icons8.com/officel/256/selenium-test-automation.png",
         },
         {
             name: "Maven",
