@@ -9,3 +9,26 @@
     position: absolute;
     z-index: -1;
 }
+
+.background-info-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    pointer-events: none;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.background-info-image.reveal {
+    opacity: 0.3;
+}

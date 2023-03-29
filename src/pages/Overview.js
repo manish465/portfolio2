@@ -4,10 +4,18 @@ import TechSection from "../components/TechSection";
 
 import { skillData, toolsData } from "../data";
 
-const Overview = () => {
+const Overview = ({ setImage }) => {
     const horizontalComponentList = [
-        <TechSection heading={skillData.heading} data={skillData.techList} />,
-        <TechSection heading={toolsData.heading} data={toolsData.techList} />,
+        <TechSection
+            heading={skillData.heading}
+            data={skillData.techList}
+            setImage={setImage}
+        />,
+        <TechSection
+            heading={toolsData.heading}
+            data={toolsData.techList}
+            setImage={setImage}
+        />,
     ];
 
     return (
