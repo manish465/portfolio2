@@ -169,4 +169,14 @@ section#menu-content {
             }
         }
     }
+
+    @media (max-width: 540px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        .card {
+            width: 300px;
+            height: 100px;
+        }
+    }
 }

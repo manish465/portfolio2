@@ -67,4 +67,36 @@ section.banner {
             }
         }
     }
+
+    @media (max-width: 930px) {
+        article {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 540px) {
+        article {
+            width: 70%;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                gap: 0.5rem;
+
+                button {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 1px solid white;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
 }
