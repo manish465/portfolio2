@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import MenuIcon from "../assets/icons/MenuIcon";
+import MenuIcon from "../custom-icons/MenuIcon";
 
 const NavBar = ({ isMenuOpen, setIsMenuOpen }) => {
     return (
