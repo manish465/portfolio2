@@ -1,8 +1,9 @@
-import Banner from "../components/Banner";
-import Contact from "../components/Contact";
-import HorizontalScrollSection from "../components/HorizontalScrollSection";
-import TechSection from "../components/TechSection";
-
+import {
+    Banner,
+    Contact,
+    HorizontalScrollSection,
+    TechSection,
+} from "../components";
 import { skillData, toolsData } from "../data";
 
 const Overview = () => {

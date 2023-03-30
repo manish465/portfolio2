@@ -1,11 +1,8 @@
 import { useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import Menu from "./components/Menu";
-import NavBar from "./components/NavBar";
-
+import { Menu, NavBar } from "./components";
 import { appContext } from "./context/AppContext";
-
 import useMousePosHook from "./hooks/useMousePosHook";
 
 const AppStructure = ({ children }) => {
