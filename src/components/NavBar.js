@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { appContext } from "../context/AppContext";
 import MenuIcon from "../custom-icons/MenuIcon";
 
-const NavBar = ({ isMenuOpen, setIsMenuOpen }) => {
+const NavBar = () => {
+    const { isMenuOpen, setIsMenuOpen } = useContext(appContext);
+
     return (
         <header id="nav-bar" className="glass">
             <Link to="/">

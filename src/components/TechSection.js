@@ -1,4 +1,9 @@
-const TechSection = ({ heading, data, setImage }) => {
+import { useContext } from "react";
+import { appContext } from "../context/AppContext";
+
+const TechSection = ({ heading, data }) => {
+    const { setImage } = useContext(appContext);
+
     return (
         <div className="tech-section">
             <h1 className="tech-heading">{heading}</h1>
