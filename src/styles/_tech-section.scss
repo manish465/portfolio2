@@ -35,9 +35,9 @@
                 z-index: -1;
                 clip-path: circle(0% at 50% 50%);
                 transition: clip-path 0.4s ease-out;
-                border-top: 5px solid white;
-                border-bottom: 5px solid white;
-                background-color: rgba($color: #9c9c9c, $alpha: 0.2);
+                border-top: 5px solid #fdfffc;
+                border-bottom: 5px solid #fdfffc;
+                background-color: rgba($color: #020100, $alpha: 0.2);
             }
 
             &:hover {

@@ -9,7 +9,7 @@ section#menu-content {
     gap: 5rem;
 
     .card {
-        background-color: bisque;
+        background-color: #235789;
         width: 500px;
         height: 200px;
         position: relative;
@@ -61,7 +61,7 @@ section#menu-content {
             opacity: 0;
             transition: inherit;
             transform-origin: bottom right;
-            color: #fff;
+            color: #fdfffc;
             transition-delay: 0.2s;
         }
 
@@ -71,7 +71,7 @@ section#menu-content {
             width: 50%;
             height: 100%;
             right: 0;
-            background-color: orangered;
+            background-color: #c1292e;
             clip-path: circle(15% at 77% 82%);
             transition: inherit;
         }
@@ -106,7 +106,7 @@ section#menu-content {
                 transition: inherit;
                 font-size: 1.2rem;
                 font-weight: 900;
-                color: #000;
+                color: #020100;
                 transform: translateY(20px);
             }
 
@@ -142,7 +142,7 @@ section#menu-content {
 
             h3 {
                 transform: scale(1.5);
-                color: #fff;
+                color: #fdfffc;
             }
 
             i {
@@ -151,7 +151,7 @@ section#menu-content {
             }
 
             h5 {
-                color: gray;
+                color: #f1d302;
                 letter-spacing: 10px;
             }
 

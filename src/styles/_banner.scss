@@ -15,7 +15,7 @@ section.banner {
         width: 40%;
         padding: 3rem;
         border-radius: 30px;
-        border: 2px solid white;
+        border: 2px solid #fdfffc;
 
         h2 {
             font-size: 4.3rem;
@@ -35,8 +35,8 @@ section.banner {
             button {
                 padding: 1rem;
                 background-color: transparent;
-                border: 3px solid white;
-                color: white;
+                border: 3px solid #fdfffc;
+                color: #fdfffc;
                 font-size: 1.2rem;
                 border-radius: 10px;
                 position: relative;
@@ -93,7 +93,7 @@ section.banner {
                 button {
                     width: 100%;
                     padding: 0.5rem;
-                    border: 1px solid white;
+                    border: 1px solid #fdfffc;
                     font-size: 0.8rem;
                 }
             }

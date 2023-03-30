@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import Contact from "../components/Contact";
 import HorizontalScrollSection from "../components/HorizontalScrollSection";
 import TechSection from "../components/TechSection";
 
@@ -24,7 +25,7 @@ const Overview = ({ setImage }) => {
             <HorizontalScrollSection
                 horizontalComponentList={horizontalComponentList}
             />
-            <section>1</section>
+            <Contact />
         </section>
     );
 };
