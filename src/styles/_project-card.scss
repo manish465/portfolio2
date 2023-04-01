@@ -1,0 +1,58 @@
+.project {
+    width: 500px;
+    height: 400px;
+    position: relative;
+
+    img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    h3.project-name {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    p.project-description {
+        width: 60%;
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    ul.project-tags {
+        width: 60%;
+        position: absolute;
+        bottom: 35%;
+        left: 5%;
+        list-style-type: none;
+        display: flex;
+        gap: 0.5rem;
+        padding-inline-start: 0;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    i {
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute;
+    }
+
+    i.fa-github {
+        bottom: 5%;
+        left: 5%;
+    }
+
+    i.fa-up-right-from-square {
+        top: 5%;
+        right: 5%;
+        font-size: 1.5rem;
+    }
+}
