@@ -1,9 +1,9 @@
-import { projectDataList, tagDataList } from "../data";
+import { tagDataList } from "../data";
 
-const ProjectCards = () => {
+const ProjectCards = ({ list }) => {
     return (
         <div className="project-list">
-            {projectDataList.map((project, key) => (
+            {list.map((project, key) => (
                 <div key={key} className="project">
                     <div className="background-alpha glass"></div>
                     <img src={project.img} alt={project.name} />

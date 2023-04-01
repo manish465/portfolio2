@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectCards from "../components/ProjectCards";
-import { tagDataList } from "../data";
+import { projectDataList, tagDataList } from "../data";
 
 const Projects = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [projectList, setProjectList] = useState(projectDataList);
+
+    useEffect(() => {
+        if (activeTab === 0) setProjectList(projectDataList);
+        else {
+            const newList = projectDataList.filter((project) =>
+                project.tags.includes(activeTab)
+            );
+            setProjectList(newList);
+        }
+    }, [activeTab]);
 
     return (
         <section className="projects">
@@ -22,7 +33,7 @@ const Projects = () => {
                     </button>
                 ))}
             </div>
-            <ProjectCards />
+            <ProjectCards list={projectList} />
         </section>
     );
 };
