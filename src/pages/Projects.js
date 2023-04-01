@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ProjectCard from "../components/ProjectCard";
-import { projectDataList, tagDataList } from "../data";
+import ProjectCards from "../components/ProjectCards";
+import { tagDataList } from "../data";
 
 const Projects = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -22,11 +22,7 @@ const Projects = () => {
                     </button>
                 ))}
             </div>
-            <div className="project-list">
-                {projectDataList.map((project, key) => (
-                    <ProjectCard key={key} project={project} />
-                ))}
-            </div>
+            <ProjectCards />
         </section>
     );
 };
