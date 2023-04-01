@@ -1,22 +1,27 @@
 section.projects {
+    padding: 6rem 2rem;
     width: 100%;
     min-height: 100vh;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #235789;
+    gap: 3rem;
 
     .button-filter-group {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
 
         .filter-button {
             font-size: 1.2rem;
+            font-weight: 800;
             color: #235789;
             background-color: #fdfffc;
             border: none;
             padding: 0.5rem;
-            border-radius: 10px;
+            border-radius: 4px;
             overflow: hidden;
             position: relative;
 
@@ -34,6 +39,71 @@ section.projects {
         .filter-button.active {
             &::after {
                 clip-path: circle(100% at 50% 50%);
+            }
+        }
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5rem;
+
+        .project {
+            width: 500px;
+            height: 400px;
+            position: relative;
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+
+            h3.project-name {
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+
+            p.project-description {
+                width: 60%;
+                position: absolute;
+                bottom: 15%;
+                left: 5%;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            ul.project-tags {
+                width: 60%;
+                position: absolute;
+                bottom: 35%;
+                left: 5%;
+                list-style-type: none;
+                display: flex;
+                gap: 0.5rem;
+                padding-inline-start: 0;
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+
+            i {
+                cursor: pointer;
+                font-size: 2rem;
+                position: absolute;
+            }
+
+            i.fa-github {
+                bottom: 5%;
+                left: 5%;
+            }
+
+            i.fa-up-right-from-square {
+                top: 5%;
+                right: 5%;
+                font-size: 1.5rem;
             }
         }
     }
