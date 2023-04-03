@@ -14,14 +14,8 @@ const menuItemList = [
         path: "/projects",
     },
     {
-        title: "Career",
-        backgroundClassList: "background-pic pic-3",
-        isDownloadable: false,
-        path: "/career",
-    },
-    {
         title: "Resume",
-        backgroundClassList: "background-pic pic-4",
+        backgroundClassList: "background-pic pic-3",
         isDownloadable: true,
     },
 ];

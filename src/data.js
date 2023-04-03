@@ -168,7 +168,34 @@ export const projectDataList = [
         img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
         github: "https://github.com/manish465/portfolio2",
         liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [1, 2, 3],
+        tags: [2, 3],
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+    },
+    {
+        name: "Project Name",
+        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+        github: "https://github.com/manish465/portfolio2",
+        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
+        tags: [3],
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+    },
+    {
+        name: "Project Name",
+        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+        github: "https://github.com/manish465/portfolio2",
+        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
+        tags: [1],
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+    },
+    {
+        name: "Project Name",
+        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+        github: "https://github.com/manish465/portfolio2",
+        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
+        tags: [2],
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
     },

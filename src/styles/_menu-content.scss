@@ -1,7 +1,6 @@
 $img-url1: "https://media4.giphy.com/media/l0Iy3qmrODEarmfHq/giphy.gif?cid=ecf05e47tff5il5ideyraqjyxqix971wg4fwpczpoys6ftec&rid=giphy.gif&ct=g";
 $img-url2: "https://media0.giphy.com/media/4GWgNkOcQeubVjoc5P/giphy.gif?cid=ecf05e47sx5m7qw0hsbyf3pkjtdvk9w5wo3yevqo641mkpzg&rid=giphy.gif&ct=g";
-$img-url3: "https://media4.giphy.com/media/2FazqHqS4F1sQkHLi/giphy.gif?cid=ecf05e47ts21k3bgzq2ywuz6e3ech2am37fnb7dhuvw23w4o&rid=giphy.gif&ct=g";
-$img-url4: "https://media3.giphy.com/media/Fd0rrjTJ3yLDi/giphy.gif?cid=ecf05e473248zs45lzqh5y748cbebj103w0m8wdic7nve8tv&rid=giphy.gif&ct=g";
+$img-url3: "https://media3.giphy.com/media/Fd0rrjTJ3yLDi/giphy.gif?cid=ecf05e473248zs45lzqh5y748cbebj103w0m8wdic7nve8tv&rid=giphy.gif&ct=g";
 
 section#menu-content {
     display: grid;
@@ -36,9 +35,6 @@ section#menu-content {
         }
         .pic-3 {
             background-image: url($img-url3);
-        }
-        .pic-4 {
-            background-image: url($img-url4);
         }
 
         h3 {
