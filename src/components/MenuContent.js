@@ -25,20 +25,22 @@ const MenuContent = () => {
         <section id="menu-content">
             {menuItemList.map((menuItem, key) => {
                 return menuItem.isDownloadable ? (
-                    <div key={key} class="card">
-                        <div className={menuItem.backgroundClassList}></div>
-                        <div className="shape-circle"></div>
-                        <h3 className="title">{menuItem.title}</h3>
-                        <i class="fa-sharp fa-solid fa-download"></i>
-                        <h5>portfolio</h5>
-                        <div className="random-icons">
-                            <span>A</span>
-                            <span>E</span>
-                            <span>I</span>
-                            <span>O</span>
-                            <span>U</span>
+                    <a href={require("../assets/Manish_Resume.pdf")}>
+                        <div key={key} class="card">
+                            <div className={menuItem.backgroundClassList}></div>
+                            <div className="shape-circle"></div>
+                            <h3 className="title">{menuItem.title}</h3>
+                            <i class="fa-sharp fa-solid fa-download"></i>
+                            <h5>portfolio</h5>
+                            <div className="random-icons">
+                                <span>A</span>
+                                <span>E</span>
+                                <span>I</span>
+                                <span>O</span>
+                                <span>U</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 ) : (
                     <Link key={key} to={menuItem.path}>
                         <div key={key} class="card">

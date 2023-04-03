@@ -14,9 +14,9 @@ const Banner = () => {
                     <Link to="/projects">
                         <button>My Projects</button>
                     </Link>
-                    <Link>
+                    <a href={require("../assets/Manish_Resume.pdf")}>
                         <button>My Resume</button>
-                    </Link>
+                    </a>
                 </div>
             </article>
         </section>
