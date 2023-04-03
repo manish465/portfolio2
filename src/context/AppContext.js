@@ -11,7 +11,10 @@ const AppContext = ({ children }) => {
 
     useEffect(() => {
         setIsMenuOpen(true);
-        setTimeout(() => setIsMenuOpen(false), 1000);
+        setTimeout(
+            () => setIsMenuOpen(false),
+            window.screen.width > 540 ? 1000 : 500
+        );
     }, [location.pathname]);
 
     return (

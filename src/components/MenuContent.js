@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MenuContentCard from "./MenuContentCard";
 
 const menuItemList = [
     {
@@ -26,37 +27,11 @@ const MenuContent = () => {
             {menuItemList.map((menuItem, key) => {
                 return menuItem.isDownloadable ? (
                     <a href={require("../assets/Manish_Resume.pdf")}>
-                        <div key={key} class="card">
-                            <div className={menuItem.backgroundClassList}></div>
-                            <div className="shape-circle"></div>
-                            <h3 className="title">{menuItem.title}</h3>
-                            <i class="fa-sharp fa-solid fa-download"></i>
-                            <h5>portfolio</h5>
-                            <div className="random-icons">
-                                <span>A</span>
-                                <span>E</span>
-                                <span>I</span>
-                                <span>O</span>
-                                <span>U</span>
-                            </div>
-                        </div>
+                        <MenuContentCard key={key} menuItem={menuItem} />
                     </a>
                 ) : (
                     <Link key={key} to={menuItem.path}>
-                        <div key={key} class="card">
-                            <div className={menuItem.backgroundClassList}></div>
-                            <div className="shape-circle"></div>
-                            <h3 className="title">{menuItem.title}</h3>
-                            <i className="fa-solid fa-arrow-right"></i>
-                            <h5>portfolio</h5>
-                            <div className="random-icons">
-                                <span>A</span>
-                                <span>E</span>
-                                <span>I</span>
-                                <span>O</span>
-                                <span>U</span>
-                            </div>
-                        </div>
+                        <MenuContentCard key={key} menuItem={menuItem} />
                     </Link>
                 );
             })}

@@ -1,3 +1,7 @@
 section#overview {
     min-height: 100vh;
+
+    & > article {
+        min-height: 100vh;
+    }
 }

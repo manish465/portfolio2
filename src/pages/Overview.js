@@ -15,9 +15,15 @@ const Overview = () => {
     return (
         <section id="overview">
             <Banner />
-            <HorizontalScrollSection
-                horizontalComponentList={horizontalComponentList}
-            />
+            {window.screen.width > 540 ? (
+                <HorizontalScrollSection
+                    horizontalComponentList={horizontalComponentList}
+                />
+            ) : (
+                horizontalComponentList.map((component, key) => (
+                    <article key={key}>{component}</article>
+                ))
+            )}
             <Contact />
         </section>
     );

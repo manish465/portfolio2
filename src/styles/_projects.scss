@@ -42,4 +42,16 @@ section.projects {
             }
         }
     }
+
+    @media (max-width: 540px) {
+        padding: 7rem 0;
+
+        .button-filter-group {
+            flex-wrap: wrap;
+
+            .filter-button {
+                font-size: 1rem;
+            }
+        }
+    }
 }

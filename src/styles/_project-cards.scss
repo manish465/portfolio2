@@ -63,4 +63,12 @@
             font-size: 1.5rem;
         }
     }
+
+    @media (max-width: 540px) {
+        grid-template-columns: 1fr;
+
+        .project {
+            width: 400px;
+        }
+    }
 }
