@@ -27,7 +27,7 @@ export const skillData = {
         },
         {
             name: "Maven",
-            image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png",
+            image: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Maven_logo.gif",
         },
         {
             name: "TestNG",
@@ -115,88 +115,52 @@ export const tagDataList = [
     { name: "Frontend", tabId: 1 },
     { name: "Backend", tabId: 2 },
     { name: "Database", tabId: 3 },
+    { name: "Reactjs", tabId: 4 },
+    { name: "Nextjs", tabId: 5 },
 ];
 
 export const projectDataList = [
     {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [1, 2],
+        name: "Contact Manager",
+        github: "https://github.com/manish465/react-contact-manager",
+        liveSite: "https://contact-manager-manish465.netlify.app/",
+        tags: [1, 2, 3, 4],
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+            "A fullstack webapp that can manage and store your contacts.",
     },
     {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [2],
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
-    },
-    {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [1],
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
-    },
-    {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [1],
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
-    },
-    {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [2],
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
-    },
-    {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
+        name: "Contact Manager Backend",
+        github: "https://github.com/manish465/contact-manager",
         tags: [2, 3],
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+        description: "A spring-boot backend with MySql database",
     },
     {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+        name: "Portfolio Site",
         github: "https://github.com/manish465/portfolio2",
         liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [3],
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+        tags: [1, 4],
+        description: "A fontend portfolio site",
     },
     {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [1],
+        name: "Next Fast Food App",
+        github: "https://github.com/manish465/next-fast-food-app",
+        liveSite: "https://next-fast-food-app.vercel.app/",
+        tags: [1, 2, 3, 5],
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+            "A fullstack webapp that allows users to browse menus and place orders",
     },
     {
-        name: "Project Name",
-        img: "https://images.unsplash.com/photo-1680120627295-48423ec59fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-        github: "https://github.com/manish465/portfolio2",
-        liveSite: "https://my-portfolio-v2-manish465.netlify.app/",
-        tags: [2],
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos.",
+        name: "React Sorting Visualizer",
+        github: "https://github.com/manish465/sorting-visualizer",
+        liveSite: "https://sorting-visualizer-manish456.netlify.app/",
+        tags: [1, 4],
+        description: "A React app that allow visualize the sorting process",
+    },
+    {
+        name: "React Flood Fill Visualizer",
+        github: "https://github.com/manish465/sorting-visualizer",
+        liveSite: "https://flood-fill-visualization-manish465.netlify.app/",
+        tags: [1, 4],
+        description: "A React app that allow visualize the flood fill effect",
     },
 ];
