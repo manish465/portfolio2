@@ -121,6 +121,19 @@ export const tagDataList = [
 
 export const projectDataList = [
     {
+        name: "To Do App",
+        github: "https://github.com/manish465/to-do-app-frontend",
+        liveSite: "https://to-do-app-fullstack-manish465.netlify.app/",
+        tags: [1, 2, 3, 4],
+        description: "A fullstack webapp that can track and manage your task.",
+    },
+    {
+        name: "To Do App Backend",
+        github: "https://github.com/manish465/to-do-app-server",
+        tags: [2, 3],
+        description: "A Nodejs server with mongodb database.",
+    },
+    {
         name: "Contact Manager",
         github: "https://github.com/manish465/react-contact-manager",
         liveSite: "https://contact-manager-manish465.netlify.app/",
