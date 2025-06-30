@@ -129,7 +129,7 @@ export const projectDataList = [
             "A microservices-based application that automatically generates comprehensive README files for GitHub repositories using AI.",
     },
     {
-        name: "Sign Language Classifies",
+        name: "Sign Language Classifier",
         github: "https://github.com/manish465/Sign-language",
         tags: [6],
         description:
